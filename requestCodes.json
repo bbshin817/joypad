@@ -1,0 +1,116 @@
+{
+	"key" : {
+		"code" : "1001",
+		"value" : {
+			"up" : "1",
+			"down" : "-1"
+		}
+	},
+	"keyDefault" : {
+		"code" : "2001",
+		"value" : "99"
+	},
+	"speed" : {
+		"code" : "1002",
+		"value" : {
+			"up" : "1",
+			"down" : "-1"
+		}
+	},
+	"speedDefault" : {
+		"code" : "2002",
+		"value" : "0"
+	},
+	"telopSize" : {
+		"code" : "2003",
+		"value" : {
+			"off" : "0",
+			"small" : "1",
+			"medium" : "2",
+			"large" : "3"
+		}
+	},
+	"stop" : {
+		"code" : "200",
+		"value" : null
+	},
+	"pause" : {
+		"code" : "202",
+		"value" : null
+	},
+	"restart" : {
+		"code" : "201",
+		"value" : null
+	},
+	"micQuality" : {
+		"code" : "2017",
+		"value" : {
+			"hard" : "1",
+			"medium" : "2",
+			"soft" : "3"
+		}
+	},
+	"micPressure" : {
+		"code" : "2018",
+		"value" : {
+			"small" : "1",
+			"medium" : "2",
+			"large" : "3"
+		}
+	},
+	"micEcho" : {
+		"code" : "2016",
+		"value" : {
+			"enka" : "1",
+			"ballad" : "2",
+			"rock" : "3",
+			"pops" : "4",
+			"off" : "5",
+			"auto" : "6"
+		}
+	},
+	"musicLevel" : {
+		"code" : "1004",
+		"value" : {
+			"up" : "1",
+			"down" : "-1"
+		}
+	},
+	"micLevel" : {
+		"code" : "1005",
+		"value" : {
+			"up" : "1",
+			"down" : "-1"
+		}
+	},
+	"echo" : {
+		"code" : "1006",
+		"value" : {
+			"up" : "1",
+			"down" : "-1"
+		}
+	},
+	"moriageLevel" : {
+		"code" : "1102",
+		"value" : {
+			"up" : "1",
+			"down" : "-1"
+		}
+	},
+	"guideLevel" : {
+		"code" : "2009",
+		"value" : {
+			"off" : "0",
+			"small" : "1",
+			"medium" : "2",
+			"large" : "3"
+		}
+	},
+	"postludeCut" : {
+		"code" : "2010",
+		"value" : {
+			"disable" : "0",
+			"enable" : "1"
+		}
+	}
+}

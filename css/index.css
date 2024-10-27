@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "FOT-UDKakugo";
+	src: url(../fonts/FOT-UDKakugo_LargePr6-DB.woff2);
+}
+
+@font-face {
+	font-family: "familiar";
+	src: url(../fonts/FamiliarPro-Bold.woff2);
+}
+
+app, origin, app-frame, parts, flex-righter, flex-lefter, signal, battery,
+main, modal, modal-main, modal-back, modal-body, main-frame {
+    display: block;
+}

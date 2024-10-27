@@ -1,0 +1,371 @@
+div.main-search-track-cover {
+	width: 100%;
+}
+
+div.main-search-track-cover.top {
+	display: flex;
+}
+
+div.main-search-track-box {
+	padding: 5px;
+}
+
+div.main-search-track-box.left {
+	width: 55%;
+}
+
+div.main-search-track-box.right {
+	width: 45%;
+}
+
+div.main-search-track-btn-box {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+button.search-track-btn {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	padding-left: 25px;
+}
+
+button.search-track-btn > div {
+	display: flex;
+}
+
+button.search-track-btn > div:nth-child(1) {
+	flex-shrink: 0;
+}
+
+button.search-track-btn > div:nth-child(2) {
+	width: 100%;
+}
+
+button.search-track-btn > div > div {
+	display: flex;
+	align-items: flex-end;
+	margin: 0 auto;
+	font-size: 36pt;
+	line-height: 36pt;
+    word-break: keep-all;
+	color: #fff;
+}
+
+button.search-track-btn.large {
+	width: calc(50% - 15px);
+	margin: 5px 7.5px;
+	border-radius: 5px;
+}
+
+button.search-track-btn.large[type="artist"],
+button.search-track-btn.large[type="title"] {
+	height: 125px;
+}
+
+button.search-track-btn.large[type="lyric"],
+button.search-track-btn.large[type="keyword"] {
+	height: 80px;
+}
+
+button.search-track-btn.large[type="artist"] {
+	background-color: rgb(214, 12, 26);
+	box-shadow: 0 2px 0 2px rgb(160, 12, 21);
+}
+
+button.search-track-btn.large[type="title"] {
+	background-color: rgb(57, 104, 201);
+	box-shadow: 0 2px 0 2px rgb(43, 79, 154);
+}
+
+button.search-track-btn.large[type="lyric"] {
+	background-color: rgb(234, 105, 21);
+	box-shadow: 0 2px 0 2px rgb(172, 76, 13);
+}
+
+button.search-track-btn.large[type="keyword"] {
+	background-color: rgb(1, 188, 175);
+	box-shadow: 0 2px 0 2px rgb(0, 139, 128);
+}
+
+button.search-track-btn.large > div > svg {
+	display: block;
+	width: 64px;
+	aspect-ratio: 1/1;
+	margin: 0 auto;
+}
+
+button.search-track-btn.large > div > svg.stroke {
+	stroke: #fff;
+}
+
+button.search-track-btn.large > div > svg.fill {
+	fill: #fff;
+}
+
+button.search-track-btn.large > div > div > span:nth-child(1) {
+	font-size: 22pt;
+	line-height: 22pt;
+}
+
+button.search-track-btn.large > div > div > span:nth-child(2) {
+	font-size: 12pt;
+	letter-spacing: 0.5pt;
+	line-height: 12pt;
+}
+
+div.main-search-track-btn-box[index="2"] {
+	margin-top: 5px;
+	padding: 2.5px;
+}
+
+button.search-track-btn.medium {
+	width: calc(100% / 3 - 10px);
+	padding-left: 20px;
+	height: 67.5px;
+	margin: 5px;
+	border-radius: 7.5px;
+	background-color: rgb(63, 55, 81);
+	box-shadow: 0 2px 0 2px rgb(11, 10, 60);
+}
+
+button.search-track-btn.medium > div > div {
+	font-size: 18pt;
+	letter-spacing: 1pt;
+	line-height: 18pt;
+}
+
+button.search-track-btn.medium > div:nth-child(1) > svg {
+	width: 35px;
+	aspect-ratio: 1/1;
+}
+
+button.search-track-btn.medium[type="genre"] > div:nth-child(1) > svg {
+	fill: rgb(255, 200, 0);
+	transform: scaleX(-1);
+}
+
+button.search-track-btn.medium[type="calender"] > div:nth-child(1) > svg {
+	fill: rgb(0, 168, 0);
+}
+
+button.search-track-btn.medium[type="original"] > div:nth-child(1) > svg {
+	stroke: rgb(255, 63, 181);
+	transform: scale(1.125);
+}
+
+button.search-track-btn.medium[type="history"] > div:nth-child(1) > svg {
+	fill: rgb(184, 0, 230);
+	transform: scale(1.125);
+}
+
+button.search-track-btn.medium[type="number"] > div:nth-child(1) > svg {
+	stroke: rgb(0, 183, 255);
+	transform: scale(0.75);
+	transform-origin: left center;
+}
+
+button.search-track-btn.medium[type="new"] > div:nth-child(1) > svg {
+	fill: rgb(255, 187, 0);
+	transform: scale(1.125);
+}
+
+div.main-search-track-btn-box[index="3"] {
+	margin-top: 2.5px;
+}
+
+button.search-track-btn.small {
+	position: relative;
+	display: block;
+	width: calc(50% - 10px);
+	padding: 0;
+	height: 70px;
+	margin: 2.5px 5px;
+	border-radius: 10px;
+	background-color: rgb(150, 150, 150);
+}
+
+button.search-track-btn.small > div {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 1.5px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 5px 10px;
+	width: calc(100% - 4px);
+	height: calc(100% - 6px);
+	border-radius: 7.5px;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 3px 0 0 rgb(194, 194, 194);
+}
+
+button.search-track-btn.small > div > div {
+	display: block;
+}
+
+button.search-track-btn.small > div > div:nth-child(1) {
+	height: 100%;
+	margin-right: 10px;
+	padding: 5px;
+	aspect-ratio: 1/1;
+}
+
+button.search-track-btn.small > div > div:nth-child(1) > div {
+	width: 100%;
+	aspect-ratio: 1/1;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button.search-track-btn.small > div > div:nth-child(1):empty {
+	display: none;
+}
+
+button.search-track-btn.small > div > div:nth-child(2) {
+	width: 100%;
+}
+
+button.search-track-btn.small > div > div:nth-child(2).arena > div {
+	color: rgb(0, 153, 255) !important;
+}
+
+button.search-track-btn.small > div > div:nth-child(2) > div {
+	text-align: left;
+}
+
+button.search-track-btn.small > div > div:nth-child(2) > div:nth-child(1) {
+	font-size: 11pt;
+	line-height: 11pt;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+button.search-track-btn.small > div > div:nth-child(2) > div:nth-child(2) {
+	margin-top: 5px;
+	font-size: 14pt;
+	line-height: 14pt;
+	color: rgba(0, 0, 0, 0.9);
+}
+
+div.main-list-box {
+	width: 100%;
+	margin: 25px 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+}
+
+div.main-list-box > div:nth-child(1) {
+	width: 100%;
+	padding: 12.5px 20px;
+	border-top: 10px solid;
+	font-size: 20pt;
+	text-align: center;
+}
+
+div.main-list-box.orange > div:nth-child(1) {
+	border-color: rgb(255, 110, 6);
+	color: rgb(255, 110, 6);
+}
+
+div.main-list-box.pink > div:nth-child(1) {
+	border-color: rgb(255, 22, 158);
+	color: rgb(255, 22, 158);
+}
+
+div.main-list-box.orange > div:nth-child(1) > span {
+	margin: 0 -4px;
+}
+
+div.main-list-box.orange > div:nth-child(2) > div {
+	display: flex;
+	align-items: center;
+	padding: 15px 10px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div.main-list-box.orange > div:nth-child(2) > div > div:nth-child(1) {
+	width: 52.5px;
+	aspect-ratio: 1/1;
+	font-size: 22pt;
+	font-family: "familiar";
+	padding-top: 12.5px;
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+div.main-list-box.orange > div:nth-child(2) > div:nth-child(1) > div:nth-child(1),
+div.main-list-box.orange > div:nth-child(2) > div:nth-child(2) > div:nth-child(1),
+div.main-list-box.orange > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+	color: #fff;
+	text-shadow: 0 2.5px 1px rgba(0, 0, 0, 0.1);
+	filter: drop-shadow(0 1.5px 0 rgba(0, 0, 0, 0.5));
+}
+
+div.main-list-box.orange > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+	background-image: url(../assets/crown_1.png);
+}
+
+div.main-list-box.orange > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+	background-image: url(../assets/crown_2.png);
+}
+
+div.main-list-box.orange > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+	background-image: url(../assets/crown_3.png);
+}
+
+div.main-list-box.orange > div:nth-child(2) > div > div:nth-child(2) {
+	margin-left: 25px;
+}
+
+div.main-list-box.orange > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(1) {
+	font-size: 20pt;
+	line-height: 20pt;
+}
+
+div.main-list-box.orange > div:nth-child(2) > div > div:nth-child(2) > div:nth-child(2) {
+	margin-top: 7.5px;
+	font-size: 13pt;
+	line-height: 13pt;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+div.main-list-box > div.items {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 15px;
+}
+
+div.main-list-box > div.items > div.item {
+	position: relative;
+	width: calc(50% - 10px);
+	aspect-ratio: 16/9;
+	background-color: rgb(200, 200, 200);
+	margin: 5px;
+	overflow: hidden;
+}
+
+@keyframes main-list-box-item {
+	0% {
+		transform: translateX(-200%);
+	}
+	100% {
+		transform: translateX(350%);
+	}
+}
+
+div.main-list-box > div.items > div.item::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	filter: blur(64px);
+	background-color: rgb(100, 100, 100);
+	animation: main-list-box-item 3s ease infinite;
+}

@@ -61,6 +61,10 @@ modal-body[type="lyric"] {
 	border-color: rgb(255, 50, 50);
 }
 
+modal-body[type="error"] {
+	border-color: rgb(102, 102, 102);
+}
+
 modal-body[type="error"],
 modal-body[type="branch"] {
 	padding: 10px 15px;
@@ -85,6 +89,17 @@ div.modal-header > div {
 	color: rgb(224, 0, 0);
 }
 
+modal-body[type="error"] > div.modal-header > svg {
+	display: block;
+	width: 38px;
+	stroke: none;
+	fill: rgb(102, 102, 102);
+}
+
+modal-body[type="error"] > div.modal-header > div {
+	color: rgb(102, 102, 102);
+}
+
 div.modal-message {
 	display: table;
 	width: 100%;
@@ -94,7 +109,7 @@ div.modal-message {
 div.modal-message > div {
 	display: table-cell;
 	vertical-align: middle;
-	font-size: 32pt;
+	font-size: 30pt;
 	line-height: 47pt;
 	color: rgba(0, 0, 0, 0.9);
 	text-align: center;
@@ -109,12 +124,18 @@ div.modal-btn-box {
 
 button.modal-btn {
 	width: 20%;
+	word-break: keep-all;
 	padding: 20px 15px;
 	border: 1px solid rgba(0, 0, 0, 0.9);
 	border-radius: 4px;
 	font-size: 20pt;
+	font-weight: normal;
 	line-height: 20pt;
 	color: #fff;
+}
+
+modal-body[type="error"] > div.modal-btn-box > button {
+	margin: 0 auto;
 }
 
 button.modal-btn.cancel {

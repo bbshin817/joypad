@@ -536,3 +536,7 @@ main.home-body > main-frame {
     height: 100%;
     overflow-y: scroll;
 }
+
+main-frame:not([active]) {
+    display: none !important;
+}

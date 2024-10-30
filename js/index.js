@@ -18,9 +18,31 @@ $(function(){
 		}, 75);
 	});
 
-	$("button.home-header-tab-btn").on("click", function(){
+	$("button.home-header-tab-btn").on("click", async function(){
 		$("button.home-header-tab-btn").removeAttr("active");
 		$(this).attr("active", "");
+		switch($(this).attr("tabName")){
+			case "top":
+				$("main-frame").removeAttr("active");
+				$("main-frame[name=\"top\"]").attr("active", "");
+				break;
+			default:
+				await _.sleep(200);
+				$("main-frame").removeAttr("active");
+				$("main-frame[name=\"empty\"]").attr("active", "");
+				await _.sleep(50);
+				await _.modal.error([
+					"エラー",
+					"この機能はSwitchモードでは\nご利用いただけません。",
+					"閉じる"
+				]);
+				await _.sleep(10);
+				$("button.home-header-tab-btn").removeAttr("active");
+				$("button.home-header-tab-btn[tabName=\"top\"]").attr("active", "");
+				$("main-frame").removeAttr("active");
+				$("main-frame[name=\"top\"]").attr("active", "");
+				break;
+		}
 	});
 
 	$("button.home-footer-toggle-btn").on("click", function(){
@@ -31,11 +53,6 @@ $(function(){
 		}
 	});
 
-	let s = (s) => {
-		return new Promise(async (resolve) => {
-			setTimeout(resolve, s);
-		});
-	};
 	let f = (level) => {
 		d = (l) => {
 			$("signal").attr("level", l);
@@ -45,12 +62,12 @@ $(function(){
 			if (nl < level){
 				for(let i=nl+1; i<level; i++){
 					d(i);
-					await s(Math.random() * 5000 + 50);
+					await _.sleep(Math.random() * 5000 + 1000);
 				}
 			} else if (nl > level) {
 				for(let i=nl; level<=i; i--){
 					d(i);
-					await s(Math.random() * 500 + 50);
+					await _.sleep(Math.random() * 5000 + 1000);
 				}
 			} else {
 				d(level);
@@ -62,10 +79,7 @@ $(function(){
 	(async() => {
 		while (true){
 			await f(Math.floor(Math.random() * 6 + 0));
-			await s(Math.random() * 10000 + 50);
+			await _.sleep(Math.random() * 10000 + 1000);
 		}
 	})();
-
-	setInterval(() => {
-	}, 1000);
 });

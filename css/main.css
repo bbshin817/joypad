@@ -369,3 +369,29 @@ div.main-list-box > div.items > div.item::after {
 	background-color: rgb(100, 100, 100);
 	animation: main-list-box-item 3s ease infinite;
 }
+
+/* search track */
+
+main-frame[name="searchTrack"] {
+	display: flex;
+	padding: calc(var(--home_header_height) + 15px) 15px calc(var(--home_footer_height) + 15px) 15px !important;
+}
+
+main-frame[name="searchTrack"] > flex-lefter {
+	display: block;
+	margin-right: 10px;
+	width: 70%;
+}
+
+main-frame[name="searchTrack"] > flex-righter {
+	width: 30%;
+}
+
+div.main-st {
+	width: 100%;
+	padding: 15px;
+}
+
+div.main-st.bottom {
+	background-color: rgb(200, 200, 200);
+}
